@@ -30,7 +30,7 @@ jobs:
       - name: make test ebook
         if: env.OPENAI_API_KEY != null
         run: |
-            python3 make_book.py --book_name "./test_books/2041.epub"  --no_limit --test
+            python3 make_book.py --book_name "./test_books/2041.epub"  --no_limit
 
       - name: Rename and Upload ePub
         if: env.OPENAI_API_KEY != null
